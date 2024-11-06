@@ -55,14 +55,3 @@ function App() {
 export default App
 // ❗ DO NOT CHANGE THE CODE  BELOW
 if (typeof module !== 'undefined' && module.exports) module.exports = App
-
-
-{
-  people.map((character) => (
-    <Character
-      key={character.id}
-      name={character.name}
-      planet={planets.find((planet) => planet.id === character.planetId)}
-    />
-  ))
-}
